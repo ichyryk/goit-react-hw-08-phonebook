@@ -34,10 +34,16 @@ const RegisterPage = () => {
     <div>
       <h1>Please, register to create a new account!</h1>
 
-      <form onSubmit={handleSubmit} autoComplete="off">
+      <form className="form" onSubmit={handleSubmit} autoComplete="off">
         <label>
           Name
-          <input type="text" name="name" value={name} onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={name}
+            onChange={handleChange}
+            placeholder="Enter your name"
+          />
         </label>
 
         <label>
@@ -47,6 +53,7 @@ const RegisterPage = () => {
             name="email"
             value={email}
             onChange={handleChange}
+            placeholder="Enter your email"
           />
         </label>
 
@@ -57,6 +64,7 @@ const RegisterPage = () => {
             name="password"
             value={password}
             onChange={handleChange}
+            placeholder="Enter your password"
           />
         </label>
 

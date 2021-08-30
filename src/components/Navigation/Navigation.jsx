@@ -5,12 +5,6 @@ import routes from '../../routes';
 import { getIsLoggedIn } from '../../redux/auth/auth-selectors';
 
 const Navigation = () => {
-  //   const [value, setValue] = React.useState(2);
-
-  //   const handleChange = (event, newValue) => {
-  //     setValue(newValue);
-  //   };
-
   const isLoggedIn = useSelector(getIsLoggedIn);
   return (
     <nav>
